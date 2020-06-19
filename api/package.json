@@ -1,0 +1,28 @@
+{
+   "name": "travel-api",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "license": "MIT",
+   "devDependencies": {
+      "@types/node": "^14.0.13",
+      "ts-node": "8.10.2",
+      "typescript": "3.9.5"
+   },
+   "dependencies": {
+      "apollo-server-express": "^2.15.0",
+      "class-transformer": "^0.2.3",
+      "connect-sqlite3": "^0.9.11",
+      "express": "^4.17.1",
+      "express-session": "^1.17.1",
+      "graphql": "^15.1.0",
+      "graphql-toolkit": "^0.7.5",
+      "pg": "^8.2.1",
+      "reflect-metadata": "^0.1.10",
+      "sqlite3": "^4.2.0",
+      "type-graphql": "^1.0.0-rc.2",
+      "typeorm": "0.2.25"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts"
+   }
+}
