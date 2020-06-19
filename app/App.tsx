@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Theme, DefaultTheme, Provider as PaperProvider } from "react-native-paper";
-import CardView from "./src/components/CardView";
 import { ApolloProvider } from "@apollo/react-hooks";
 import { apolloClient } from "./graphql";
+import { Places } from './src/screens';
 
 const theme: Theme = {
     ...DefaultTheme,
@@ -14,23 +14,12 @@ const theme: Theme = {
   }
 }
 
-const trip1 = {
-    title: 'Welcome to TypeScript',
-    description: '',
-    imageUrl: '',
-    user: null,
-    onPress: null
-}
-
 export default function App() {
   return (
       <PaperProvider theme={theme}>
         <ApolloProvider client={apolloClient}>
             <View style={styles.container}>
-                <CardView {...trip1} />
-                <CardView {...trip1} />
-                <CardView {...trip1} />
-                <CardView {...trip1} />
+                <Places />
             </View>
         </ApolloProvider>
       </PaperProvider>
