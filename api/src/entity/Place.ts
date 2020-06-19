@@ -3,7 +3,7 @@ import { ObjectType, Field, ID } from "type-graphql";
 
 @ObjectType({ description: 'Destination or place of interest' })
 @Entity()
-export default class Place extends BaseEntity {
+export class Place extends BaseEntity {
 
     /**
      * Field - allowing Graphql to query
