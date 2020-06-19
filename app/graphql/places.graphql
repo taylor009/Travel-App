@@ -1,0 +1,8 @@
+query Places {
+    places {
+        id
+        title
+        description
+        imageUrl
+    }
+}

@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Theme, DefaultTheme, Provider as PaperProvider } from "react-native-paper";
 import CardView from "./src/components/CardView";
+import { ApolloProvider } from "@apollo/react-hooks";
+import { apolloClient } from "./graphql";
 
 const theme: Theme = {
     ...DefaultTheme,
@@ -23,12 +25,14 @@ const trip1 = {
 export default function App() {
   return (
       <PaperProvider theme={theme}>
-        <View style={styles.container}>
-            <CardView {...trip1} />
-            <CardView {...trip1} />
-            <CardView {...trip1} />
-            <CardView {...trip1} />
-        </View>
+        <ApolloProvider client={apolloClient}>
+            <View style={styles.container}>
+                <CardView {...trip1} />
+                <CardView {...trip1} />
+                <CardView {...trip1} />
+                <CardView {...trip1} />
+            </View>
+        </ApolloProvider>
       </PaperProvider>
   );
 }
