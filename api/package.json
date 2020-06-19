@@ -4,6 +4,7 @@
    "description": "Awesome project developed with TypeORM.",
    "license": "MIT",
    "devDependencies": {
+      "@types/express-session": "^1.17.0",
       "@types/node": "^14.0.13",
       "ts-node": "8.10.2",
       "typescript": "3.9.5"
