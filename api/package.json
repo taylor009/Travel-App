@@ -16,7 +16,7 @@
       "apollo-server-express": "^2.15.0",
       "bcrypt": "^5.0.0",
       "class-transformer": "^0.2.3",
-      "class-validator": "^0.12.2",
+      "class-validator": "^0.14.0",
       "connect-sqlite3": "^0.9.11",
       "express": "^4.17.1",
       "express-session": "^1.17.1",
